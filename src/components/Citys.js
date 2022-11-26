@@ -1,6 +1,6 @@
 import { useWeather } from "../context/WeatherContext";
 function Citys() {
-  const { city, setCity, JsonCity, setIsDark, isDark } = useWeather();
+  const { city, setCity, JsonCity} = useWeather();
   const HandleChain = (e) => {
     JsonCity.filter((ct) => ct.name === e.target.value && setCity(ct));
   };
