@@ -5,7 +5,7 @@ import Days from "./Days";
 function Container() {
   const { isDark } = useWeather();
   return (
-    <div className={`App ${isDark ? "dark" : ""}`}>
+    <div className="App">
       <div className="container">
         <Citys />
         <Days />
